@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "titulo": "Hamburguesa",
+        "precio": 3890,
+        "imagen": "https://images.app.goo.gl/2bjJm1jE5zjpjPmz6"
+    },
+    {
+        "id": 2,
+        "titulo": "pizza",
+        "precio": 5600,
+        "imagen": "https://images.app.goo.gl/Pw6PVHF84McW2BCUA"
+    },
+    {
+        "id": 3,
+        "titulo": "pollo asado",
+        "precio": 7800,
+        "imagen": "https://images.app.goo.gl/ooKYurDi8oMRa4VZ6"
+    },
+    {
+        "id": 4,
+        "titulo": "completo italiano",
+        "precio": 1690,
+        "imagen": "https://images.app.goo.gl/ooKYurDi8oMRa4VZ6"
+    }
+]
