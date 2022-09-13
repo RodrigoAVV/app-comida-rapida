@@ -8,14 +8,14 @@ const server = app.listen(PORT,() => {
 })
 server.on('error',error => console.log(`Error en el servidor ${error}`))
 
-app.get('/productos',(req,res) => {
-    let data = fs.readFileSync('./data/productos.json','utf-8')
+app.get('/productos',async (req,res) => {
+    let data = await fs.promises.readFile('./data/productos.json','utf-8')
     data = JSON.parse(data)
     res.json(data)
 })
 
-app.get('/productoRandom',(req,res) => {
-    let data = fs.readFileSync('./data/productos.json','utf-8')
+app.get('/productoRandom',async (req,res) => {
+    let data = await fs.promises.readFile('./data/productos.json','utf-8')
     data = JSON.parse(data)
     const total = (data.length - 1)
     const indice = Math.floor(Math.random()*(total-0+1)+0)
